@@ -206,7 +206,6 @@
       <groupId>org.hsqldb</groupId>
       <artifactId>hsqldb</artifactId>
       <version>2.3.5</version> <!-- Version 2.4.0 required jdk8 -->
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.derby</groupId>
@@ -273,6 +272,9 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <testCompilerArgument>${maven.compiler.testCompilerArgument}</testCompilerArgument>
+          <source>1.8</source>
+          <target>1.8</target>
+          <encoding>utf-8</encoding>
         </configuration>
       </plugin>
       <plugin>
